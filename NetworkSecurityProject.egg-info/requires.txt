@@ -3,7 +3,7 @@ pandas
 numpy
 pymongo
 certifi
-pymongo[srv]
+pymongo[srv]==3.12
 scikit-learn
 mlflow
 pyaml

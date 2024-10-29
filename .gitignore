@@ -1,3 +1,6 @@
 env/
 #  Load variables securely from .env 
 .env
+NetworkSecurityProject.egg-info/
+logs/
+Artifacts/

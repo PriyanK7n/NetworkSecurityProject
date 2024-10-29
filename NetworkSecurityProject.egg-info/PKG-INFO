@@ -8,7 +8,7 @@ Requires-Dist: pandas
 Requires-Dist: numpy
 Requires-Dist: pymongo
 Requires-Dist: certifi
-Requires-Dist: pymongo[srv]
+Requires-Dist: pymongo[srv]==3.12
 Requires-Dist: scikit-learn
 Requires-Dist: mlflow
 Requires-Dist: pyaml
