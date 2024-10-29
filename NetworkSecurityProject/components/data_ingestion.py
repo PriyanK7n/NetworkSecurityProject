@@ -1,5 +1,6 @@
 from NetworkSecurityProject.exception.exception import NetworkSecurityException
 from NetworkSecurityProject.logging.logger import logging
+
 ## configuration of the Data Ingestion Config
 from NetworkSecurityProject.entity.config_entity import DataIngestionConfig
 from NetworkSecurityProject.entity.artifact_entity import DataIngestionArtifact
