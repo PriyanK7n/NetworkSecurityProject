@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/priyank/Desktop/Job-Resume/Interview-Preparation/MLOPs/NetworkSecurityProject/mlruns/0/ec336e56f7f14ca89c5d705d882359a9/artifacts
+end_time: 1730302028443
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ec336e56f7f14ca89c5d705d882359a9
+run_name: rumbling-bird-192
+run_uuid: ec336e56f7f14ca89c5d705d882359a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730302024771
+status: 3
+tags: []
+user_id: priyank

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/priyank/Desktop/Job-Resume/Interview-Preparation/MLOPs/NetworkSecurityProject/mlruns/0/7fb96cf6b86244419688e7fc412e8dae/artifacts
+end_time: 1730302031013
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7fb96cf6b86244419688e7fc412e8dae
+run_name: casual-mink-597
+run_uuid: 7fb96cf6b86244419688e7fc412e8dae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730302028458
+status: 3
+tags: []
+user_id: priyank

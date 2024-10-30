@@ -1,7 +1,9 @@
-from NetworkSecurityProject.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from NetworkSecurityProject.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
 from NetworkSecurityProject.components.data_ingestion import DataIngestion
 from NetworkSecurityProject.components.data_validation import DataValidation
 from NetworkSecurityProject.components.data_transformation import DataTransformation
+from NetworkSecurityProject.components.model_trainer import ModelTrainer
+
 
 import sys
 # from NetworkSecurityProject.entity.artifact_entity import DataIngestionArtifact
@@ -14,6 +16,7 @@ if __name__ == "__main__":
 
         '''Data Ingestion Process Starting'''
         trainingPipelineConfig = TrainingPipelineConfig()
+
         dataIngestionConfig= DataIngestionConfig(trainingPipelineConfig)
         data_ingestion_obj = DataIngestion(dataIngestionConfig)
         logging.info("Initating Data Ingestion Process")
@@ -47,7 +50,20 @@ if __name__ == "__main__":
         logging.info("Data Transformation Process Completed")
         '''Data Transformation Process Finished'''
 
-    
+
+
+        '''Model Training Process Started'''
+
+        # data_transformation_config = DataTransformationConfig(trainingPipelineConfig)
+        logging.info("Initating Model Training Process")
+        print("Model Trainer uses data_transformation_artifact and ModelTrainerConfig as Input")
+        model_trainer_config = ModelTrainerConfig(trainingPipelineConfig)
+        model_trainer = ModelTrainer(model_trainer_config = model_trainer_config, data_transformation_artifact = data_transformation_artifact)
+        model_trainer_artifact = model_trainer.initiate_model_trainer()
+        logging.info("Model Trainer Artifact Created hence Model Training Process Completed")
+        
+        '''Model Training Process Finished'''
+
     except Exception as e:
         raise NetworkSecurityException(e, sys)
 

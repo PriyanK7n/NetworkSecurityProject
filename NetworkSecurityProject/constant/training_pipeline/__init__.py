@@ -17,7 +17,8 @@ TEST_FILE_NAME: str = "test.csv"
 
 SCHEMA_FILE_PATH = os.path.join("data_schema", "schema.yaml") # defined for validation component
 
-SAVED_MODEL_DIR =os.path.join("saved_models")
+
+SAVED_MODEL_DIR = os.path.join("saved_models")
 MODEL_FILE_NAME = "model.pkl"
 
 

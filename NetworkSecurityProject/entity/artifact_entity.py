@@ -6,6 +6,7 @@ class DataIngestionArtifact:
     trained_file_path:str
     test_file_path:str
 
+
 # Output of DataValidation Component
 @dataclass
 class DataValidationArtifact:
@@ -23,6 +24,7 @@ class DataTransformationArtifact:
     transformed_train_file_path: str
     transformed_test_file_path: str
     
+
 # ModelTrainer uses this class
 @dataclass
 class ClassificationMetricArtifact:
@@ -37,4 +39,3 @@ class ModelTrainerArtifact:
     trained_model_file_path: str
     train_metric_artifact: ClassificationMetricArtifact
     test_metric_artifact: ClassificationMetricArtifact
-
