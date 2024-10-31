@@ -55,6 +55,25 @@ The steps involved in the Data Ingestion process are:
 * Each component, including Data Ingestion, outputs an artifact, encapsulated within artifact_entity.py.
 * Input configurations for each component are managed via respective config_entity classes, ensuring modularity and reusability.
 
+* final_model folder houses the best model found and the data preprocessor object associated with the data for it  pickle files
+
+Steps in project:
+1. Write 4 Components:
+   1. Data Ingestion Process
+   2. Data Validation Process
+   3. Data Transformation Process
+   4. Model Training Process
+2. Create a Training Pipeline
+3. Creating API Prediction using Fast API:-
+Input is :
+- best model (model.pkl)
+- preprocessor object (preprocessor.pkl)
+  Steps:
+   1. Training 
+   2. Batch Prediction by data uploaded in Fast API:
+      1. Takes batch of test data (without dependent variable) in valid_data folder
+      2. Gived Batch prediction output n prediction_output folder with last column as the dependent variable we're trying to predict
 
 
-
+# Deployment Steps of Network Security Application in AWS:
+![alt text](image-1.png)

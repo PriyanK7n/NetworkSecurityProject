@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
         dataIngestionConfig= DataIngestionConfig(trainingPipelineConfig)
         data_ingestion_obj = DataIngestion(dataIngestionConfig)
+        
         logging.info("Initating Data Ingestion Process")
         dataingestionartifact = data_ingestion_obj.initiate_data_ingestion()
         logging.info("Data Ingestion Process Completed")

@@ -66,7 +66,6 @@ class DataTransformation:
             # Create and return the Pipeline with the imputer
             processor : Pipeline = Pipeline([("imputer",imputer)])
             return processor  
-
         except Exception as e:
             raise NetworkSecurityException(e, sys)
 
@@ -115,7 +114,12 @@ class DataTransformation:
        
         save_object(self.data_transformation_config.transformed_object_file_path, preprocessor_obj,)
 
+        # This creates a folder called final_model and saves the best data transformation preprocessor_obj object as a pickle file in it
         save_object("final_model/preprocessor.pkl", preprocessor_obj,)
+
+
+
+
 
 
         #preparing artifacts

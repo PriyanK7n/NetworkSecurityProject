@@ -38,7 +38,15 @@ from sklearn.ensemble import (
     RandomForestClassifier,)
 
 from NetworkSecurityProject.utils.main_utils.utils import evaluate_models
+
+
 import mlflow
+# DAGs Hub (remote repo) Logging with MLFlow Tracking: This will not create MLflow folder here but in dagshub
+import dagshub
+dagshub.init(repo_owner='PriyanK7n', repo_name='NetworkSecurityProject', mlflow=True)
+
+
+
 
 
 class ModelTrainer:
@@ -166,6 +174,8 @@ class ModelTrainer:
         
         # save_object is used to store object as a pickle file by Pushing Best Model and is defined in NetworkSecurityProject/utils/main_utils/utils.py file
         save_object(self.model_trainer_config.trained_model_file_path, obj = Network_Model)
+        
+        # This creates folder called final_model and saves the best model as a pickle file in it
         save_object("final_model/model.pkl",best_model)
 
         # Model Trainer Artifact
@@ -206,3 +216,5 @@ class ModelTrainer:
 
         except Exception as e:
             raise NetworkSecurityException(e, sys)
+
+            

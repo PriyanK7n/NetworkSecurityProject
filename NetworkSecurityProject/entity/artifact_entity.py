@@ -6,7 +6,6 @@ class DataIngestionArtifact:
     trained_file_path:str
     test_file_path:str
 
-
 # Output of DataValidation Component
 @dataclass
 class DataValidationArtifact:
@@ -16,6 +15,7 @@ class DataValidationArtifact:
     invalid_train_file_path: str
     invalid_test_file_path: str
     drift_report_file_path: str
+
 
 # Output of DataTransformation Component
 @dataclass
