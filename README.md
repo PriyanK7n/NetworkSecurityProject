@@ -73,6 +73,10 @@ Input is :
    2. Batch Prediction by data uploaded in Fast API:
       1. Takes batch of test data (without dependent variable) in valid_data folder
       2. Gived Batch prediction output n prediction_output folder with last column as the dependent variable we're trying to predict
+4. Deployment of the NetworkPhishing Data Detection application as a docker 
+
+![AWS CI/CD Pipeline with Self-Hosted App Runner on EC2 Linux Using Dockerized Application ](image-2.png)
+
 
 
 # Deployment Steps of Network Security Application in AWS:
