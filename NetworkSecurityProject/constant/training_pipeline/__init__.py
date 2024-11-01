@@ -35,7 +35,6 @@ DATA_INGESTION_TRAIN_TEST_SPLIT_RATION: float = 0.2
 
 
 
-
 """
 Data Validation related constant start with DATA_VALIDATION VAR NAME
 """
