@@ -74,7 +74,7 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
-  # Job 3 Self-hosted runner needed which will be listening in AWS EC2 instance
+  # Job 3 Self-hosted runner needed which will be listening in AWS EC2 instance at port 8080
   Continuous-Deployment:
 
     needs: build-and-push-ecr-image
